@@ -1,71 +1,14 @@
 <!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Free Case Simulator — апгрейды CS2</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="topbar">
-    <a class="brand" href="#home"><span class="brand-mark">FC</span><span>Free Case</span></a>
-    <nav>
-      <a href="#inventory">Инвентарь</a>
-      <a href="#upgrade">Апгрейды</a>
-      <a href="#rewards">Награды</a>
-    </nav>
-    <button id="loginBtn" class="steam">Войти через Steam</button>
-  </header>
-
-  <main>
-    <section id="home" class="hero panel">
-      <div>
-        <p class="eyebrow">Бесплатный симулятор</p>
-        <h1>Открывай кейсы и апгрейдь CS2-предметы без депозита</h1>
-        <p>Все предметы, баланс и шансы виртуальные. Симулятор повторяет основные игровые механики: инвентарь, выбор предмета, апгрейд, награды и статистику.</p>
-        <div class="hero-actions">
-          <button id="openCaseBtn" class="primary">Открыть бесплатный кейс</button>
-          <button id="dailyBtn" class="secondary">Забрать награду</button>
-        </div>
-      </div>
-      <div class="stats-grid">
-        <article><strong id="onlineCount">—</strong><span>Онлайн</span></article>
-        <article><strong id="playersCount">—</strong><span>Всего игроков</span></article>
-        <article><strong id="upgradesCount">—</strong><span>Сделано апгрейдов</span></article>
-      </div>
-    </section>
-
-    <section id="inventory" class="panel">
-      <div class="section-title">
-        <div><p class="eyebrow">Инвентарь</p><h2>Выберите предметы и/или баланс</h2></div>
-        <div class="balance">Баланс: <strong id="balance">0</strong> ₽</div>
-      </div>
-      <div id="selectedStrip" class="selected-strip">Выбранные предметы появятся здесь</div>
-      <div id="inventoryGrid" class="item-grid"></div>
-    </section>
-
-    <section id="upgrade" class="panel upgrade-panel">
-      <div class="section-title"><div><p class="eyebrow">Апгрейд</p><h2>Выберите предмет для апгрейда</h2></div></div>
-      <div class="upgrade-layout">
-        <div class="upgrade-card"><span>Мой предмет</span><div id="sourceSlot" class="slot">Выберите предмет из инвентаря</div></div>
-        <div class="chance-ring"><strong id="chanceValue">0%</strong><span>шанс</span></div>
-        <div class="upgrade-card"><span>Желаемый предмет</span><select id="targetSelect"></select></div>
-      </div>
-      <button id="upgradeBtn" class="primary wide">Апгрейд</button>
-      <p id="upgradeResult" class="result"></p>
-    </section>
-
-    <section id="rewards" class="panel">
-      <div class="section-title"><div><p class="eyebrow">Награды</p><h2>Ежедневные бонусы</h2></div></div>
-      <div class="reward-row">
-        <article><strong>+150 ₽</strong><span>за ежедневный вход</span></article>
-        <article><strong>Кейс</strong><span>каждые 30 секунд в демо</span></article>
-        <article><strong>0 риска</strong><span>никаких реальных платежей</span></article>
-      </div>
-    </section>
-  </main>
-
-  <footer>Free Case Simulator © 2026 · Не аффилировано с Valve Corp. · Только виртуальные предметы</footer>
-  <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Бесплатный симулятор кейсов, апгрейдов, контрактов и заданий CS2 без депозитов и реальных платежей." />
+    <title>Free Case Simulator — бесплатный симулятор кейсов CS2</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>

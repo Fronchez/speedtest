@@ -1,0 +1,17 @@
+{
+  "name": "free-case-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Полноценный бесплатный SPA-симулятор кейсов и апгрейдов CS2 без реальных платежей.",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "preview": "vite preview --host 0.0.0.0",
+    "check": "node --check src/main.js && node --check src/state.js && node --check src/router.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-basic-ssl": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
