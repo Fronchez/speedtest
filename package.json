@@ -5,13 +5,10 @@
   "type": "module",
   "description": "Полноценный бесплатный SPA-симулятор кейсов и апгрейдов CS2 без реальных платежей.",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "preview": "vite preview --host 0.0.0.0",
+    "dev": "python3 -m http.server 5173",
+    "preview": "python3 -m http.server 4173",
     "check": "node --check src/main.js && node --check src/state.js && node --check src/router.js"
   },
-  "dependencies": {
-    "@vitejs/plugin-basic-ssl": "latest",
-    "vite": "latest"
-  },
+  "dependencies": {},
   "devDependencies": {}
 }
